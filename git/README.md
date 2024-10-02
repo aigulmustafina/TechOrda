@@ -8,4 +8,4 @@
 | 4.   |  branch    | [github.com](./branch/)    | https://github.com/aigulmustafina/jusan/commit/a17b7b6b22ec0dfd84ca6f451d70ad66c61050ab https://github.com/aigulmustafina/jusan/commit/e70995c2cc4abdf88f4be729eaf735126455c3db
 | 5.   |  merge     | [github.com](./merge/)     | https://github.com/aigulmustafina/jusan/commit/e70995c2cc4abdf88f4be729eaf735126455c3db
 | 6.   |  my-pr     | [github.com](./my-pr/)     | https://github.com/aigulmustafina/jusan/pull/1
-| 7.   |  fork-pr   | [github.com](./fork-pr/)   |
+| 7.   |  fork-pr   | [github.com](./fork-pr/)   | https://github.com/jusan-singularity/fork-me/pull/111
