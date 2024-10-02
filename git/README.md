@@ -3,7 +3,7 @@
 | Урок | Тип               | Название  | Ссылка                     |
 | ---- | ----------------- | --------- | -------------------------- |
 | 1.   |  git-init  | [github.com](./git-init/)  |https://github.com/aigulmustafina/jusan/commit/63c070cb734cc94ad14b95593b6992b9e89c7d2a
-| 2.   |  readme    | [github.com](./readme/)    |
+| 2.   |  readme    | [github.com](./readme/)    | https://github.com/aigulmustafina/jusan/commit/b54d2d866437d01a5dcfb56459f0be4d0d9f695e
 | 3.   |  gitignore | [github.com](./gitignore/) |
 | 4.   |  branch    | [github.com](./branch/)    |
 | 5.   |  merge     | [github.com](./merge/)     |
