@@ -2,7 +2,7 @@
 
 | Урок | Тип               | Название  | Ссылка                     |
 | ---- | ----------------- | --------- | -------------------------- |
-| 1.   |  git-init  | [github.com](./git-init/)  |
+| 1.   |  git-init  | [github.com](./git-init/)  |https://github.com/aigulmustafina/jusan
 | 2.   |  readme    | [github.com](./readme/)    |
 | 3.   |  gitignore | [github.com](./gitignore/) |
 | 4.   |  branch    | [github.com](./branch/)    |
