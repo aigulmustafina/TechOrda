@@ -1,4 +1,4 @@
-# nginx-files
+ngoni# nginx-files
 
 Важно знать ключевые файлы, директории и команды NGINX. Научившись этому,
 вы сможете изменять конфигурации, проверять измененные настройки,
@@ -45,3 +45,23 @@
 | nginx -T | Проверяет конфигурацию NGINX и<br>выводит проверенную конфигурацию<br>на экран. Эта команда полезна при отладке. |
 
 > 🕹 Попробуйте запустить эти команды на запущенном `nginx`
+
+nginx -v
+    nginx version: nginx/1.27.2
+
+nginx -t
+    nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
+    nginx: configuration file /etc/nginx/nginx.conf test is successful
+
+nginx -T
+
+    # configuration file /etc/nginx/conf.d/ssl.conf:
+    server {
+        listen 443 ssl;
+        ssl_certificate /var/www/html/certificate.crt;
+        ssl_certificate_key /var/www/html/private.key;
+        server_name localhost;
+        location / {
+            proxy_pass http://localhost:8080;
+        }
+    }

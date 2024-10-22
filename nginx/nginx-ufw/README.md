@@ -20,3 +20,10 @@
 ---
 
 ### Ответ
+sudo systemctl start nginx
+sudo systemctl enable nginx
+sudo systemctl status nginx
+sudo apt install ufw -y
+sudo ufw allow "Nginx full"
+sudo ufw enable
+sudo ufw status verbose

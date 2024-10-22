@@ -10,3 +10,27 @@
 6. Учетка `design` не должна иметь доступ на другие пути, тоже самое касается других учеток.
 
 ---
+server{
+    listen 8080;
+    server_name example.com;
+    location / {
+        root /var/www/example.com;
+        index index.html;
+    }
+    location /images {
+        root /var/www/example.com;
+        satisfy any;
+        allow 127.0.0.1;
+        deny all;
+        auth_basic "Restricted content";
+        auth_basic_user_file /etc/nginx/./htpasswd_design;
+    }
+    location /gifs {
+        root /var/www/example.com;
+        satisfy any;
+        allow 127.0.0.1;
+        deny all;
+        auth_basic "Restricted content";
+        auth_basic_user_file /etc/nginx/./htpasswd_marketing;
+    }
+}

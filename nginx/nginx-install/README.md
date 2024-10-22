@@ -22,8 +22,7 @@ nginx version: nginx/1.14.0 (Ubuntu)
 Создать файл `/etc/apt/sources.list.d/nginx.list`, который содержит:
 
 ```
-deb http://nginx.org/packages/mainline/OS/ CODENAME nginx
-deb-src http://nginx.org/packages/mainline/OS/ CODENAME nginx
+
 ```
 
 Измените файл, заменив `OS` в конце URL-адреса на `ubuntu` или `debian`, в зависимости
@@ -114,3 +113,5 @@ curl http://127.0.0.1
 ---
 
 ### Ответ
+nginx -v
+    nginx version: nginx/1.27.2
