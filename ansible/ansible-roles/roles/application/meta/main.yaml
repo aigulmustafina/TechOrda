@@ -1,0 +1,4 @@
+---
+galaxy_info:
+  role_name: application
+  description: Install and configure the API service.

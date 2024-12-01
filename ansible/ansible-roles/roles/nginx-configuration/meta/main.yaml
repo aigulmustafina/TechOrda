@@ -1,0 +1,4 @@
+---
+galaxy_info:
+  role_name: nginx-configuration
+  description: Configure Nginx with server blocks.

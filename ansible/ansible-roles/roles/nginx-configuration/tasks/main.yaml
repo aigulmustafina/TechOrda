@@ -1,0 +1,13 @@
+---
+- name: Deploy Nginx configuration for load balancing
+  template:
+    src: templates/app.conf.j2  
+    dest: /etc/nginx/conf.d/app.conf
+  vars:
+    server_name: "jusan-apps.kz"
+    apps:
+      - local-vps-23:9090
+      - local-vps-24:9090
+
+- name: Reload nginx to apply the new configuration
+  command: systemctl reload nginx
