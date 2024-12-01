@@ -1,11 +1,12 @@
 ---
 - hosts: lb
   become: true
-  roles:
-    - nginx
-    - nginx-configuration
   vars_files:
     - vars/nginx_secret_token.yaml
+  roles:
+    - geerlingguy.nginx
+    - geerlingguy.php
+    - nginx-configuration
 
 - hosts: app
   become: true

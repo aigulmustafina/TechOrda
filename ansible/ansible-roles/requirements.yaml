@@ -1,0 +1,4 @@
+---
+- name: geerlingguy.nginx
+  src: geerlingguy.nginx
+  version: "latest"
