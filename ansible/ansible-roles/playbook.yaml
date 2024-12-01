@@ -4,6 +4,8 @@
   roles:
     - nginx
     - nginx-configuration
+  vars_files:
+    - vars/nginx_secret_token.yaml
 
 - hosts: app
   become: true

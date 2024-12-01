@@ -11,3 +11,12 @@
 
 - name: Reload nginx to apply the new configuration
   command: systemctl reload nginx
+
+- name: Deploy Nginx configuration for secret
+  template:
+    src: nginx.conf.j2
+    dest: /etc/nginx/conf.d/secret.conf
+  vars:
+    server_port: 9090
+    server_name: jusan-secret.kz
+    secret: "{{ secret_token }}"
