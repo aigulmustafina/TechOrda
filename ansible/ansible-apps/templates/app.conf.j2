@@ -1,0 +1,14 @@
+upstream app {
+    {% for app in groups['app'] %}
+    server {{ hostvars[app]['ansible_host'] }}:{{ hostvars[app]['ansible_port'] }};
+    {% endfor %}
+}
+
+server {
+    listen 80;
+    server_name {{ server_name }};
+    location / {
+        proxy_pass http://app;
+        add_header X-Upstream $upstream_addr;
+    }
+}
